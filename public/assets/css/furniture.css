@@ -1,0 +1,77 @@
+
+.learn-button {
+    background-color: #FF7F50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.learn-button:hover {
+    background-color: #FF5733;
+} 
+
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    /* background-color: #F4F4F4; */
+}
+
+.features .feature {
+    text-align: center;
+
+}
+.product-gallery {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.product-gallery h2 {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.product-item {
+    position: relative;
+}
+
+.product-grid img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.product-item:hover .overlay-text {
+    opacity: 1;
+   
+} 
